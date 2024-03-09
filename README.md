@@ -61,7 +61,7 @@ Ensure you have Chezmoi installed on your system. If not,
 Chezmoi provides a script for easy installation. You can run this command in your terminal to download and install the latest version:
 
 ```sh
-sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply <koltanl>
+sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply koltanl
 ```
 ## Initialization
 

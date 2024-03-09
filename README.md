@@ -56,7 +56,7 @@ If you've stumbled upon my dotfiles and would like to try them out or use them a
 
 Ensure you have Chezmoi installed on your system. If not, 
 
-##Direct Installation Script
+## Direct Installation Script
 
 Chezmoi provides a script for easy installation. You can run this command in your terminal to download and install the latest version:
 

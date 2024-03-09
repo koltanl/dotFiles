@@ -28,7 +28,9 @@ fi
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
-
+if [ -f ~/.profile ]; then
+    source ~/.profile
+fi
 
 _KERNEL_NAME="$(expr substr $(uname -s) 1 5)"
 export PATH="$HOME/bin:$HOME/.local/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH"

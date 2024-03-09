@@ -18,7 +18,7 @@ Whenever you update your dotfiles (e.g., `.bashrc`, `.vimrc`), add these changes
 chezmoi add ~/.bashrc
 chezmoi add ~/.vimrc
 # Add any other changed files similarly
-
+```
 ### 2. Committing Changes
 
 Navigate to the Chezmoi source directory and commit your changes:
@@ -27,7 +27,7 @@ Navigate to the Chezmoi source directory and commit your changes:
 chezmoi cd
 git add .
 git commit -m "Describe your changes here"
-
+```
 
 ### 3. Pushing Changes to GitHub
 
@@ -35,14 +35,14 @@ Push your changes to GitHub to sync across all machines:
 
 ```bash
 git push
-
+```
 ### 4. Applying Changes on Another Machine
 
 On any other machine, pull the latest changes and apply them:
 
 ```bash
 chezmoi update
-
+```
 ## Additional Tips
 
 - To review changes before applying them, use `chezmoi diff`.
@@ -62,7 +62,7 @@ To initialize your setup with my dotfiles, run:
 
 ```sh
 chezmoi init git@github.com:koltanl/dotFiles.git
-
+```
 This command clones my dotfiles repository and sets it up to be managed by Chezmoi on your machine.
 
 ## Applying the Dotfiles
@@ -71,7 +71,7 @@ After initializing, apply the dotfiles to your system with:
 
 ```sh
 chezmoi apply
-
+```
 This step will configure your system with the settings and preferences defined in my dotfiles.
 
 ## Customizing for Your Needs

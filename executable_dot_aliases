@@ -1,5 +1,6 @@
 #editor
-alias nano='nano --smarthome --multibuffer --const --autoindent'alias add='chezmoi add'
+alias nano='nano --smarthome --multibuffer --const --autoindent'
+alias add='chezmoi add'
 alias edit="$EDITOR"
 
 # Edit this .rc file

@@ -54,11 +54,18 @@ If you've stumbled upon my dotfiles and would like to try them out or use them a
 
 ## Prerequisites
 
-Ensure you have Chezmoi installed on your system. If not, visit Chezmoi's installation guide for instructions.
+Ensure you have Chezmoi installed on your system. If not, 
 
+##Direct Installation Script
+
+Chezmoi provides a script for easy installation. You can run this command in your terminal to download and install the latest version:
+
+```sh
+sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply <koltanl>
+```
 ## Initialization
 
-To initialize your setup with my dotfiles, run:
+Otherwise, to initialize your setup with my dotfiles, run:
 
 ```sh
 chezmoi init git@github.com:koltanl/dotFiles.git

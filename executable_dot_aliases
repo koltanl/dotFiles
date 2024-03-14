@@ -144,4 +144,5 @@ if [[ -x "$(command -v systemctl)" ]]; then
 	alias service.restart='sudo systemctl restart' # Stop and start
 	alias service.reload='sudo systemctl reload'   # Reload configuration
 	alias service.enable='sudo systemctl enable'
+	alias service.disable='sudo systemctl disable'
 fi

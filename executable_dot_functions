@@ -361,7 +361,7 @@ function extract() {
 }
 
 #the almost universal_installer function
-install_universal() {
+procure() {
     local program_name=$1
 
     # Ask for user confirmation before proceeding
@@ -397,12 +397,12 @@ install_universal() {
     fi
 }
 
-ensure_run() { ! command -v $1 &> /dev/null && install_universal $1; command -v $1 &> /dev/null && $1; }
+ensure_run() { ! command -v $1 &> /dev/null && procure $1; command -v $1 &> /dev/null && $1; }
 
 ensure_exists() {
     if ! command -v "$1" &> /dev/null; then
         echo "'$1' is not installed. Attempting to install..."
-        install_universal "$1" && {
+        procure "$1" && {
             # Ensure figlet is installed before trying to use it
             if command -v figlet &> /dev/null; then
                 figlet "$1 Installed"

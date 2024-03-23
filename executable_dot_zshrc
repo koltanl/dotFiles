@@ -134,13 +134,15 @@ fi
 if ! command -v img2sixel &> /dev/null; then
     ensure_exists libsixel
 fi
+if ! command -v sensors &> /dev/null; then
+    ensure_exists lm-sensors
+fi
 ensure_exists tree
 ensure_exists bat
 ensure_exists fzf
 ensure_exists ffmpegthumbnailer
 ensure_exists xclip
 ensure_exists thefuck
-ensure_exists lm-sensors
 _ensure_eza_installed
 _ensure_moar_installed
 

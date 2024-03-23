@@ -140,6 +140,7 @@ ensure_exists fzf
 ensure_exists ffmpegthumbnailer
 ensure_exists xclip
 ensure_exists thefuck
+ensure_exists lm-sensors
 _ensure_eza_installed
 _ensure_moar_installed
 
